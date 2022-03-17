@@ -1,0 +1,114 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "e555560e-d152-45ab-ba20-a741b458126a": {
+        "id": "e555560e-d152-45ab-ba20-a741b458126a",
+        "parent": null,
+        "name": "alexaSkillMinor.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "alexaSkillMinor.py",
+        "cursor": {
+          "lineNumber": 12,
+          "column": 63
+        },
+        "config": {
+          "runtime": "python3.9",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "alexaSkillMinor"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSK865d5cd99d5c4c898d5411b50ddd2ae5",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1647536559671,
+        "testCases": {
+          "826e4e13-dae4-4c41-91d1-a26faa282943": {
+            "id": "826e4e13-dae4-4c41-91d1-a26faa282943",
+            "name": "Test event",
+            "functionId": "e555560e-d152-45ab-ba20-a741b458126a",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "487baf06-3f82-4700-87e1-5efe91def0e9": {
+        "id": "487baf06-3f82-4700-87e1-5efe91def0e9",
+        "parent": null,
+        "name": "requirements.txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "requirements.txt"
+      }
+    },
+    "openFiles": [
+      "e555560e-d152-45ab-ba20-a741b458126a"
+    ],
+    "currentFileId": "e555560e-d152-45ab-ba20-a741b458126a",
+    "resources": {
+      "alexaSK865d5cd99d5c4c898d5411b50ddd2ae5": {
+        "name": "alexaSK865d5cd99d5c4c898d5411b50ddd2ae5",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.865d5cd9-9d5c-4c89-8d54-11b50ddd2ae5",
+          "applicationID": ""
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "ask_sdk_core": {
+          "name": "ask_sdk_core",
+          "version": "1.14.0",
+          "dev": false,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.10.0",
+    "projectName": "alexaSkillMinor",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1647539229446
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "alexaskillminor",
+      "url": "https://github.com/Yashjaiswal638/alexaskillminor"
+    }
+  }
+}
