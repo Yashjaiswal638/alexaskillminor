@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "alexaSkillMinor.py",
         "cursor": {
-          "lineNumber": 13,
-          "column": 84
+          "lineNumber": 27,
+          "column": 12
         },
         "config": {
           "runtime": "python3.9",
@@ -102,7 +102,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1647581354505
+    "lastSave": 1647593533388
   },
   "VCS_STATE": {
     "provider": "GitHub",

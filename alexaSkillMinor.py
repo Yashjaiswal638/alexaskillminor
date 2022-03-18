@@ -10,7 +10,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return is_request_type("LaunchRequest")(handler_input)
 
     def handle(self, handler_input):
-        handler_input.response_builder.speak("Welcome to the Age Intent Alexa skill")
+        handler_input.response_builder.speak("Welcome to the Anime Intent Alexa skill")
         return handler_input.response_builder.response
 
 
@@ -24,9 +24,9 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         return handler_input.response_builder.response
 
 
-class AgeIntentHandler(AbstractRequestHandler):
+class AnimeIntentHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
-        return is_intent_name("AgeIntent")(handler_input)
+        return is_intent_name("AnimeIntent")(handler_input)
 
     def handle(self, handler_input):
         year = handler_input.request_envelope.request.intent.slots['year'].value
@@ -38,7 +38,7 @@ class AgeIntentHandler(AbstractRequestHandler):
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(AgeIntentHandler())
+sb.add_request_handler(AnimeIntentHandler())
 
 sb.add_exception_handler(CatchAllExceptionHandler())
 
