@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "alexaSkillMinor.py",
         "cursor": {
-          "lineNumber": 12,
-          "column": 63
+          "lineNumber": 13,
+          "column": 84
         },
         "config": {
           "runtime": "python3.9",
@@ -24,11 +24,11 @@
         },
         "triggers": [
           {
-            "resourceName": "alexaSK865d5cd99d5c4c898d5411b50ddd2ae5",
+            "resourceName": "alexaSKfb6040fcb1be44e9a7f72ad0bd28b224",
             "config": {}
           }
         ],
-        "lastUpdated": 1647536559671,
+        "lastUpdated": 1647575215342,
         "testCases": {
           "826e4e13-dae4-4c41-91d1-a26faa282943": {
             "id": "826e4e13-dae4-4c41-91d1-a26faa282943",
@@ -55,13 +55,13 @@
     ],
     "currentFileId": "e555560e-d152-45ab-ba20-a741b458126a",
     "resources": {
-      "alexaSK865d5cd99d5c4c898d5411b50ddd2ae5": {
-        "name": "alexaSK865d5cd99d5c4c898d5411b50ddd2ae5",
+      "alexaSKfb6040fcb1be44e9a7f72ad0bd28b224": {
+        "name": "alexaSKfb6040fcb1be44e9a7f72ad0bd28b224",
         "type": "ALEXA",
         "config": {
           "type": 1,
           "verifiedID": true,
-          "skillID": "amzn1.ask.skill.865d5cd9-9d5c-4c89-8d54-11b50ddd2ae5",
+          "skillID": "amzn1.ask.skill.fb6040fc-b1be-44e9-a7f7-2ad0bd28b224",
           "applicationID": ""
         }
       }
@@ -69,7 +69,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -86,7 +86,7 @@
       "dependencies": {
         "ask_sdk_core": {
           "name": "ask_sdk_core",
-          "version": "1.14.0",
+          "version": "1.13.0",
           "dev": false,
           "language": "python"
         }
@@ -102,7 +102,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1647539229446
+    "lastSave": 1647581354505
   },
   "VCS_STATE": {
     "provider": "GitHub",

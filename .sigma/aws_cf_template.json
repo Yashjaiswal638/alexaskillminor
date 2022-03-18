@@ -83,7 +83,7 @@
         }
       }
     },
-    "alexaSK865d5cd99d5calexaSkillMinorPermission": {
+    "alexaSKfb6040fcb1bealexaSkillMinorPermission": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "Action": "lambda:InvokeFunction",
@@ -91,7 +91,7 @@
           "Ref": "alexaSkillMinor"
         },
         "Principal": "alexa-appkit.amazon.com",
-        "EventSourceToken": "amzn1.ask.skill.865d5cd9-9d5c-4c89-8d54-11b50ddd2ae5"
+        "EventSourceToken": "amzn1.ask.skill.fb6040fc-b1be-44e9-a7f7-2ad0bd28b224"
       }
     }
   }
