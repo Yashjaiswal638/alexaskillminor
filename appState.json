@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "alexaSkillMinor.py",
         "cursor": {
-          "lineNumber": 37,
-          "column": 88
+          "lineNumber": 44,
+          "column": 1
         },
         "config": {
           "runtime": "python3.9",
