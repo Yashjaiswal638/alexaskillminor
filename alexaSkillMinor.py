@@ -41,7 +41,6 @@ class ChineseAnimalIntentHandler(AbstractRequestHandler):
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(HelloWorldIntentHandler())
 sb.add_request_handler(ChineseAnimalIntentHandler())
 
 sb.add_exception_handler(CatchAllExceptionHandler())
