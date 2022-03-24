@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "alexaSkillMinor.py",
         "cursor": {
-          "lineNumber": 27,
-          "column": 12
+          "lineNumber": 37,
+          "column": 88
         },
         "config": {
           "runtime": "python3.9",
@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1647575215342,
+        "lastUpdated": 1648114831940,
         "testCases": {
           "826e4e13-dae4-4c41-91d1-a26faa282943": {
             "id": "826e4e13-dae4-4c41-91d1-a26faa282943",
@@ -64,6 +64,16 @@
           "skillID": "amzn1.ask.skill.fb6040fc-b1be-44e9-a7f7-2ad0bd28b224",
           "applicationID": ""
         }
+      },
+      "s3minoralexaskill": {
+        "name": "s3minoralexaskill",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "minoralexaskill"
+          }
+        }
       }
     },
     "customTemplate": {
@@ -89,6 +99,13 @@
           "version": "1.13.0",
           "dev": false,
           "language": "python"
+        },
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.16.43",
+          "dev": true,
+          "notRemovable": false
         }
       }
     }

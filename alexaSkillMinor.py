@@ -1,3 +1,5 @@
+import boto3
+s3 = boto3.client("s3")
 #ask_sdk_core == 1.13.0
 
 from ask_sdk_core.skill_builder import SkillBuilder
@@ -10,7 +12,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return is_request_type("LaunchRequest")(handler_input)
 
     def handle(self, handler_input):
-        handler_input.response_builder.speak("Welcome to the Anime Intent Alexa skill")
+        handler_input.response_builder.speak("Welcome to the Age Intent Alexa skill")
         return handler_input.response_builder.response
 
 
@@ -24,13 +26,14 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
         return handler_input.response_builder.response
 
 
-class AnimeIntentHandler(AbstractRequestHandler):
+class ChineseAnimalIntentHandler(AbstractRequestHandler):
     def can_handle(self, handler_input):
-        return is_intent_name("AnimeIntent")(handler_input)
+        return is_intent_name("ChineseAnimalIntent")(handler_input)
 
     def handle(self, handler_input):
         year = handler_input.request_envelope.request.intent.slots['year'].value
-        speech_text = "My custom Intent Handler"
+        age = 2022-int(year)
+        speech_text = f"My custom Intent Handler that is finally working, Your age is {age}"
         handler_input.response_builder.speak(speech_text).set_should_end_session(False)
         return handler_input.response_builder.response
 
@@ -38,7 +41,8 @@ class AnimeIntentHandler(AbstractRequestHandler):
 sb = SkillBuilder()
 
 sb.add_request_handler(LaunchRequestHandler())
-sb.add_request_handler(AnimeIntentHandler())
+sb.add_request_handler(HelloWorldIntentHandler())
+sb.add_request_handler(ChineseAnimalIntentHandler())
 
 sb.add_exception_handler(CatchAllExceptionHandler())
 
