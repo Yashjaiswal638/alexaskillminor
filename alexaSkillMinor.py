@@ -1,5 +1,4 @@
-import boto3
-s3 = boto3.client("s3")
+
 #ask_sdk_core == 1.13.0
 
 from ask_sdk_core.skill_builder import SkillBuilder
@@ -34,7 +33,7 @@ class ChineseAnimalIntentHandler(AbstractRequestHandler):
         year = handler_input.request_envelope.request.intent.slots['year'].value
         age = 2022-int(year)
         speech_text = f"My custom Intent Handler that is finally working, Your age is {age}"
-        handler_input.response_builder.speak(s3).set_should_end_session(False)
+        handler_input.response_builder.speak(speech_text).set_should_end_session(False)
         return handler_input.response_builder.response
 
 
